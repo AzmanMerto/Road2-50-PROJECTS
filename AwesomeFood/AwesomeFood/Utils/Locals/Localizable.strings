@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  AwesomeFood
+
+  Created by NomoteteS on 26.12.2022.
+  
+*/
+
+"signInFacebook"="Sign In with Facebook";
+"signInGoogle"="Sign In with Google";
+"signInApple"="Sign In with Apple";
+"signUpWtihEmail"="Sign Up with Email"; 
+
+// Login
+
+"welcomeBack" = "Wellcome Back";
+"createAccount" = "Create account";
+"termsAndCondition" = "By clicking Create account, I agree to TOS and privacy policy.";
+
+// Buttons
+
+"getStarted" = "Get Started";
+
+// general
+"emailHint" = "Write your email";
+"passwordHind" = "Write your passowrd";
+
