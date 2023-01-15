@@ -36,8 +36,7 @@ struct BodyView: View {
                 Spacer()
                 Image(IconItems.Core.appLogo.rawValue)
                     .resizable()
-                    .background(Color.black.cornerRadius(40).opacity(0.6).frame(height: 120))
-                    .frame(width: 290,height: 145)
+                    .frame(width: 356, height: 156)
                 
                 Spacer()
                 VStack {
