@@ -23,5 +23,5 @@
 
 // general
 "emailHint" = "Write your email";
-"passwordHind" = "Write your passowrd";
+"passwordHint" = "Write your passowrd";
 

@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class OnBoardViewModel: ObservableObject {
     @Published var currentIndex: Int = 0
-    @Published var isHomeReiract: Bool = false
+    @State var isHomeReiract = false
     
     private let cache = UserDefaultCache()
     
