@@ -18,3 +18,4 @@ struct TextFieldModifier: ViewModifier {
             .foregroundColor(Color.gray)
     }
 }
+

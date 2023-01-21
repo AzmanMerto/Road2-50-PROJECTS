@@ -17,10 +17,11 @@ struct LoginView: View {
                 .font(.system(size: FontSizes.title, weight: .bold))
                 .foregroundColor(Color.secondary)
             
-            HTextIconField(hint: LocaleKeys.General.emailHint.rawValue.locale(), iconName: "mail")
-            
-            HTextSecureIconField(hint: LocaleKeys.General.passwordHind.rawValue.locale(), iconName: "lock")
-                .padding(.top,PagePadding.All.normal.rawValue)
+            VStack(spacing: PagePadding.Vertical.little.rawValue) {
+                HTextIconField(hint: LocaleKeys.General.emailHint.rawValue.locale(), iconName: "mail")
+                
+                HTextSecureIconField(hint: LocaleKeys.General.passwordHint.rawValue.locale(), iconName: "lock")
+            }
             
             Divider().background(Color.peach)
             

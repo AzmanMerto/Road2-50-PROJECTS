@@ -13,6 +13,11 @@ struct PagePadding {
         case normal = 16
     }
     
+    enum Vertical: Double {
+        case little = 5
+        case normal = 10
+    }
+    
     enum Horizontal: Double {
         case normal = 20
     }

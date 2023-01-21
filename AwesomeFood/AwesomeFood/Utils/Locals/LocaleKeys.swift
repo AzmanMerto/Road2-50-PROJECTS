@@ -22,7 +22,7 @@ struct LocaleKeys {
     
     enum General: String {
     case emailHint = "emailHint"
-    case passwordHind = "passwordHint"
+    case passwordHint = "passwordHint"
     }
     
     enum Login: String {

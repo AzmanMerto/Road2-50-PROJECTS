@@ -10,6 +10,7 @@ import SwiftUI
 struct OnboardView: View {
     
 @StateObject var onBoardViewModel = OnBoardViewModel()
+    @State var nextPageActiveted = false
     
     @State private var currentIndex: Int = 0
     
@@ -41,16 +42,17 @@ struct OnboardView: View {
                     }
                 }.frame(height: ViewHeight.indicator)
                 
-                NavigationLink(isActive: $onBoardViewModel.isHomeReiract) {
-                    WelcomeView().ignoresSafeArea().navigationBarBackButtonHidden()
+                Button {
+                    if $onBoardViewModel.isHomeReiract.wrappedValue {
+                        self.nextPageActiveted.toggle()
+                    }
                     } label: {
                         NormalButton(onTap: {
                             onBoardViewModel.saveUserLoginAndRedirect()
                         }, title: LocaleKeys.Buttons.getStarted.rawValue)
                             .padding(.all,PagePadding.All.normal.rawValue)
-                    }.onAppear{
-                        onBoardViewModel.checkUserFirstTime()
                     }
+                    
 
 
             }
