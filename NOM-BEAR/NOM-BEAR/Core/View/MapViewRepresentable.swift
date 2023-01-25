@@ -1,0 +1,42 @@
+//
+//  MapViewRepresentable.swift
+//  NOM-BEAR
+//
+//  Created by NomoteteS on 24.01.2023.
+//
+
+import SwiftUI
+import MapKit
+
+struct MapViewRepresentable : UIViewRepresentable {
+
+    
+    let mapView = MKMapView()
+    
+    func makeUIView(context: Context) -> some UIView {
+        mapView.isRotateEnabled = false
+        mapView.showsUserLocation = true
+        mapView.userTrackingMode = .follow
+        
+        return mapView
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        
+    }
+
+    func makeCoordinator() -> MapCoordinator {
+        return MapCoordinator(parent : self)
+    }
+}
+
+extension MapViewRepresentable {
+    class MapCoordinator: NSObject, MKMapViewDelegate {
+        let parent : MapViewRepresentable
+        
+        init(parent: MapViewRepresentable) {
+            self.parent = parent
+            super.init()
+        }
+    }
+}
