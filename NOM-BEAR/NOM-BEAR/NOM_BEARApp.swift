@@ -11,7 +11,7 @@ import SwiftUI
 struct NOM_BEARApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
