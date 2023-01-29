@@ -22,9 +22,32 @@ I plan to finish big projects one by one with different technologies.
 ------
   <summary>Awesome Food</summary>
   <div align= "center ">
-  <img src="https://i.hizliresim.com/g2wtm24.png" alt="Version V0.3" width="280">
-  <img src="https://i.hizliresim.com/4vh1pm4.png" alt="Version V0.6" width="280" >
-  <img src="https://i.hizliresim.com/6jog8qd.png" alt="Version V1" width="280" > 
+  <img src="https://i.hizliresim.com/g2wtm24.png" alt="Version V0.3" width="260">
+  <img src="https://i.hizliresim.com/4vh1pm4.png" alt="Version V0.6" width="260" >
+  <img src="https://i.hizliresim.com/6jog8qd.png" alt="Version V1" width="260" > 
+  
+------
+
+  </div>
+  </details>
+
+<details>
+<div alt = "Title & Description"> 
+<h1 align= "center" >NOM BEAR</h1>
+<p> 
+
+### Technologies
+* MapKit
+* Firebase (Auth, Storage, CloudStore)
+</p>
+</div>
+
+
+### Pictures
+------
+  <summary>NOM BEAR</summary>
+  <div align= "center ">
+
   
 ------
 
