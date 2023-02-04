@@ -53,3 +53,26 @@ I plan to finish big projects one by one with different technologies.
 
   </div>
   </details>
+
+
+<details>
+<div alt = "Title & Description"> 
+<h1 align= "center" >Moviee</h1>
+<p> 
+
+### Technologies
+* Data core
+</p>
+</div>
+
+
+### Pictures
+------
+  <summary>NMoviee</summary>
+  <div align= "center ">
+
+  
+------
+
+  </div>
+  </details>
