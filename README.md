@@ -14,6 +14,7 @@ I plan to finish big projects one by one with different technologies.
 ### Technologies
 * SwiftUI and UIKit integration
 * Firebase (Auth, Storage, CloudStore)
+* Network Manager
 </p>
 </div>
 
