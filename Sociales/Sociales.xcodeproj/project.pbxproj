@@ -24,6 +24,7 @@
 		3485D24029A670BF0002C2A6 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D23F29A670BF0002C2A6 /* UserListView.swift */; };
 		3485D24229A675D20002C2A6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D24129A675D20002C2A6 /* Extensions.swift */; };
 		3485D24429A678700002C2A6 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D24329A678700002C2A6 /* NotificationCell.swift */; };
+		3485D24629A67BA40002C2A6 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D24529A67BA40002C2A6 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		3485D23F29A670BF0002C2A6 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		3485D24129A675D20002C2A6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3485D24329A678700002C2A6 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		3485D24529A67BA40002C2A6 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				3485D23329A63D140002C2A6 /* ProfileView.swift */,
+				3485D24529A67BA40002C2A6 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				3485D20C29A630A80002C2A6 /* SocialesApp.swift in Sources */,
 				3485D22C29A63CAB0002C2A6 /* MainTabView.swift in Sources */,
 				3485D23629A63D1D0002C2A6 /* UploadPostView.swift in Sources */,
+				3485D24629A67BA40002C2A6 /* ProfileHeaderView.swift in Sources */,
 				3485D23429A63D140002C2A6 /* ProfileView.swift in Sources */,
 				3485D23E29A670B60002C2A6 /* UserCell.swift in Sources */,
 				3485D23A29A65F280002C2A6 /* SearchBar.swift in Sources */,
@@ -460,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sociales/Preview Content\"";
@@ -480,6 +485,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NomoSiOS.Sociales;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -494,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sociales/Preview Content\"";
@@ -514,6 +521,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NomoSiOS.Sociales;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
