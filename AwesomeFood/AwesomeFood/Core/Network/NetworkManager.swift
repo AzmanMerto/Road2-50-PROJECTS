@@ -5,14 +5,14 @@
 //  Created by NomoteteS on 5.02.2023.
 //
 
-import Foundation
+import Alamofire
 
 struct NetworkConfig {
     let baseUrl: String
 }
 
 protocol INetworkManager {
-    func fetch<T : Codable>(path: NetworkPath, type: T) -> T?
+    func fetch<T : Codable>(path: NetworkPath, method: HTTPMethod, type: T.Type) async   -> T?
     var config: NetworkConfig { get set }
 }
 
@@ -23,9 +23,12 @@ class NetworkManager: INetworkManager {
         self.config = config
     }
     
-    func fetch<T : Codable>(path: NetworkPath, type: T) -> T?  {
+    func fetch<T : Codable>(path: NetworkPath, method: HTTPMethod, type: T.Type) async -> T?  {
+        let dataRequest = AF.request("", method: method).validate().serializingDecodable(T.self)
         
-        return nil
+        let result = await dataRequest.response
+     
+        return result.value
     }
     
 }
