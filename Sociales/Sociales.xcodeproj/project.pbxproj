@@ -25,6 +25,8 @@
 		3485D24229A675D20002C2A6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D24129A675D20002C2A6 /* Extensions.swift */; };
 		3485D24429A678700002C2A6 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D24329A678700002C2A6 /* NotificationCell.swift */; };
 		3485D24629A67BA40002C2A6 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D24529A67BA40002C2A6 /* ProfileHeaderView.swift */; };
+		3485D24829A682A30002C2A6 /* UserStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D24729A682A30002C2A6 /* UserStateView.swift */; };
+		3485D24A29A687C90002C2A6 /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D24929A687C90002C2A6 /* ProfileActionButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		3485D24129A675D20002C2A6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3485D24329A678700002C2A6 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		3485D24529A67BA40002C2A6 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		3485D24729A682A30002C2A6 /* UserStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateView.swift; sourceTree = "<group>"; };
+		3485D24929A687C90002C2A6 /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 			children = (
 				3485D23329A63D140002C2A6 /* ProfileView.swift */,
 				3485D24529A67BA40002C2A6 /* ProfileHeaderView.swift */,
+				3485D24729A682A30002C2A6 /* UserStateView.swift */,
+				3485D24929A687C90002C2A6 /* ProfileActionButtonView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -332,10 +338,12 @@
 				3485D23629A63D1D0002C2A6 /* UploadPostView.swift in Sources */,
 				3485D24629A67BA40002C2A6 /* ProfileHeaderView.swift in Sources */,
 				3485D23429A63D140002C2A6 /* ProfileView.swift in Sources */,
+				3485D24829A682A30002C2A6 /* UserStateView.swift in Sources */,
 				3485D23E29A670B60002C2A6 /* UserCell.swift in Sources */,
 				3485D23A29A65F280002C2A6 /* SearchBar.swift in Sources */,
 				3485D23229A63D0C0002C2A6 /* NotificationView.swift in Sources */,
 				3485D23829A642250002C2A6 /* FeedCell.swift in Sources */,
+				3485D24A29A687C90002C2A6 /* ProfileActionButtonView.swift in Sources */,
 				3485D24029A670BF0002C2A6 /* UserListView.swift in Sources */,
 				3485D24429A678700002C2A6 /* NotificationCell.swift in Sources */,
 				3485D24229A675D20002C2A6 /* Extensions.swift in Sources */,
