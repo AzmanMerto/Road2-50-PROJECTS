@@ -10,8 +10,10 @@ import SwiftUI
 struct FeedView: View {
     var body: some View {
         ScrollView {
-            ForEach(0..<10, id: \.self) { _ in
-                FeedCell()
+            LazyVStack(spacing: 30) {
+                ForEach(0..<10, id: \.self) { _ in
+                    FeedCell()
+                }
             }
         }
     }

@@ -13,16 +13,18 @@ struct FeedCell: View {
             VStack(alignment: .center) {
             // MARK: FeedCell User Info
             HStack {
-                // Omage
+                // User Image
                 Image("testProfileImage")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 36, height: 36)
+                    .frame(width: 36,
+                           height: 36)
                     .clipped()
                     .cornerRadius(18)
-                // Text
+                // User Name
                 Text("NomoteteS")
-                    .font(.system(.subheadline ,weight: .semibold))
+                    .font(.system(.subheadline ,
+                                  weight: .semibold))
                     .foregroundColor(.pink)
             }
             .background{
@@ -77,20 +79,24 @@ struct FeedCell: View {
         }
         .scaledToFit()
             // MARK: FeedCell Caption
+        .font(.system(.caption2))
             VStack(alignment: .leading) {
                 HStack {
+                    // User Name
                     Text("NomoteteS")
-                        .font(.system(.subheadline,weight: .semibold))
+                        .font(.system(.subheadline,
+                                      weight: .semibold))
                         .foregroundColor(.pink)
-                    
                     Text("My first post LETS GOOO")
                         .font(.callout)
                 }
+                // Post Time
                 Text("2d")
                     .font(.system(.caption2))
                     .foregroundColor(.gray)
                     .padding(.top,5)
             }
+            .padding(.leading)
         }
     }
 }
