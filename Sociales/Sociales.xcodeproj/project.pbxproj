@@ -17,6 +17,7 @@
 		3485D23229A63D0C0002C2A6 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D23129A63D0C0002C2A6 /* NotificationView.swift */; };
 		3485D23429A63D140002C2A6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D23329A63D140002C2A6 /* ProfileView.swift */; };
 		3485D23629A63D1D0002C2A6 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D23529A63D1D0002C2A6 /* UploadPostView.swift */; };
+		3485D23829A642250002C2A6 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D23729A642250002C2A6 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		3485D23129A63D0C0002C2A6 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		3485D23329A63D140002C2A6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3485D23529A63D1D0002C2A6 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		3485D23729A642250002C2A6 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				3485D22D29A63CDD0002C2A6 /* FeedView.swift */,
+				3485D23729A642250002C2A6 /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				3485D23629A63D1D0002C2A6 /* UploadPostView.swift in Sources */,
 				3485D23429A63D140002C2A6 /* ProfileView.swift in Sources */,
 				3485D23229A63D0C0002C2A6 /* NotificationView.swift in Sources */,
+				3485D23829A642250002C2A6 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
