@@ -24,6 +24,7 @@ struct UserCell: View {
                 Text("Mert Türedü")
                     .font(.system(.caption))
             }
+            .foregroundColor(.pink)
             Spacer()
         }
     }

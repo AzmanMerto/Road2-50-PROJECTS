@@ -15,10 +15,15 @@ struct PostGridView: View {
     var body: some View {
         LazyVGrid(columns: items,spacing: 2) {
             ForEach(0 ..< 10) { _ in
-                Image("testPostImage")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: width, height: width)
+                NavigationLink {
+                    FeedView()
+                } label: {
+                    Image("testPostImage")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: width, height: width)
+                }
+
             }
         }
     }
