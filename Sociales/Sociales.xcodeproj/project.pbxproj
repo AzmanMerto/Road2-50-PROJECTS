@@ -52,7 +52,11 @@
 			isa = PBXGroup;
 			children = (
 				3485D20B29A630A80002C2A6 /* SocialesApp.swift */,
-				3485D20D29A630A80002C2A6 /* ContentView.swift */,
+				3485D21D29A639DD0002C2A6 /* Model */,
+				3485D21C29A639DC0002C2A6 /* View */,
+				3485D21B29A639DB0002C2A6 /* ViewModel */,
+				3485D21A29A639DA0002C2A6 /* Api */,
+				3485D21929A639D80002C2A6 /* Utils */,
 				3485D20F29A630AA0002C2A6 /* Assets.xcassets */,
 				3485D21129A630AA0002C2A6 /* Preview Content */,
 			);
@@ -65,6 +69,146 @@
 				3485D21229A630AA0002C2A6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3485D21929A639D80002C2A6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3485D21A29A639DA0002C2A6 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		3485D21B29A639DB0002C2A6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3485D22A29A63AD30002C2A6 /* Profile */,
+				3485D22929A63ACC0002C2A6 /* Auth */,
+				3485D22829A63AC70002C2A6 /* Notifications */,
+				3485D22729A63AC50002C2A6 /* Feed */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3485D21C29A639DC0002C2A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3485D22629A63A810002C2A6 /* Items */,
+				3485D22529A63A730002C2A6 /* Auth */,
+				3485D22429A63A6E0002C2A6 /* Notifications */,
+				3485D22329A63A690002C2A6 /* Search */,
+				3485D22229A63A630002C2A6 /* Comments */,
+				3485D22129A63A600002C2A6 /* Feed */,
+				3485D22029A63A5A0002C2A6 /* Profile */,
+				3485D21F29A63A540002C2A6 /* UploadPost */,
+				3485D21E29A63A4F0002C2A6 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3485D21D29A639DD0002C2A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3485D21E29A63A4F0002C2A6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3485D20D29A630A80002C2A6 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3485D21F29A63A540002C2A6 /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
+		3485D22029A63A5A0002C2A6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3485D22129A63A600002C2A6 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		3485D22229A63A630002C2A6 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		3485D22329A63A690002C2A6 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		3485D22429A63A6E0002C2A6 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		3485D22529A63A730002C2A6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3485D22629A63A810002C2A6 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		3485D22729A63AC50002C2A6 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		3485D22829A63AC70002C2A6 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		3485D22929A63ACC0002C2A6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3485D22A29A63AD30002C2A6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
