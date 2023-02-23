@@ -46,7 +46,9 @@ struct LoginView: View {
                 }
                 // MARK: - LoginView forgot password
                 HStack {
+                    
                     Spacer()
+                    
                     Button {
                         
                     } label: {
@@ -72,8 +74,10 @@ struct LoginView: View {
                 Spacer()
                 
                 // MARK: - LoginView go to sign up
-                Button {
-                    
+                
+                NavigationLink {
+                    RegistrationView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack {
                         Text("Dont have an account?")
@@ -82,7 +86,7 @@ struct LoginView: View {
                         Text("Sign Up")
                             .font(.system(.caption2,weight: .semibold))
                     }
-                    .tint(.white)
+                    .foregroundColor(.white)
                 }
             }
         }
