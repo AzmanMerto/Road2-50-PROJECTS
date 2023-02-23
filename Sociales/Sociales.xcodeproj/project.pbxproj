@@ -31,6 +31,8 @@
 		34B9C46C29A70051001F3696 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9C46B29A70051001F3696 /* LoginView.swift */; };
 		34B9C46E29A7005B001F3696 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9C46D29A7005B001F3696 /* RegistrationView.swift */; };
 		34B9C47029A70062001F3696 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9C46F29A70062001F3696 /* ResetPasswordView.swift */; };
+		34B9C47229A70887001F3696 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9C47129A70886001F3696 /* CustomTextField.swift */; };
+		34B9C47429A70893001F3696 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9C47329A70893001F3696 /* CustomSecureField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		34B9C46B29A70051001F3696 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		34B9C46D29A7005B001F3696 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		34B9C46F29A70062001F3696 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		34B9C47129A70886001F3696 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		34B9C47329A70893001F3696 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 			children = (
 				3485D24129A675D20002C2A6 /* Extensions.swift */,
 				34B9C46929A6F43A001F3696 /* ImagePicker.swift */,
+				34B9C47129A70886001F3696 /* CustomTextField.swift */,
+				34B9C47329A70893001F3696 /* CustomSecureField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -345,6 +351,7 @@
 				3485D22E29A63CDD0002C2A6 /* FeedView.swift in Sources */,
 				3485D23C29A66DFA0002C2A6 /* PostGridView.swift in Sources */,
 				34B9C46E29A7005B001F3696 /* RegistrationView.swift in Sources */,
+				34B9C47229A70887001F3696 /* CustomTextField.swift in Sources */,
 				3485D20E29A630A80002C2A6 /* ContentView.swift in Sources */,
 				3485D20C29A630A80002C2A6 /* SocialesApp.swift in Sources */,
 				3485D22C29A63CAB0002C2A6 /* MainTabView.swift in Sources */,
@@ -356,6 +363,7 @@
 				3485D24829A682A30002C2A6 /* UserStateView.swift in Sources */,
 				3485D23E29A670B60002C2A6 /* UserCell.swift in Sources */,
 				3485D23A29A65F280002C2A6 /* SearchBar.swift in Sources */,
+				34B9C47429A70893001F3696 /* CustomSecureField.swift in Sources */,
 				3485D23229A63D0C0002C2A6 /* NotificationView.swift in Sources */,
 				3485D23829A642250002C2A6 /* FeedCell.swift in Sources */,
 				3485D24A29A687C90002C2A6 /* ProfileActionButtonView.swift in Sources */,
