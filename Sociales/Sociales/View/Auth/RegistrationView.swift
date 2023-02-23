@@ -13,6 +13,10 @@ struct RegistrationView: View {
     @State private var fullname = ""
     @State private var username = ""
     @State private var password = ""
+    @State private var selectedImage: UIImage?
+    @State private var image: Image?
+    @State var imagePickerPresented = false
+    
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -24,18 +28,34 @@ struct RegistrationView: View {
             VStack {
                 Spacer()
                 // MARK: RegistrationView Image Upload
-                Button {
-                    
-                } label: {
-                    VStack {
-                        Image(systemName: "plus")
-                            .font(.system(.largeTitle, weight: .black))
-                            .padding()
-                        Text("Add Image")
+                VStack {
+                    if let image = image {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 140,
+                                   height: 140)
+                            .foregroundColor(.white)
+                            .clipShape(Circle())
+                    } else {
+                        Button {
+                            imagePickerPresented.toggle()
+                        } label: {
+                            VStack {
+                                Image(systemName: "plus")
+                                    .font(.system(.largeTitle, weight: .black))
+                                    .padding()
+                                Text("Add Image")
+                            }
+                            .tint(.white)
+                        }
+                        .sheet(isPresented: $imagePickerPresented,
+                               onDismiss: loadImage) {
+                            ImagePicker(image: $selectedImage)
+                        }
                     }
-                    .tint(.white)
                 }
-
+                .padding()
                 //  MARK: - RegistrationView email & password fields
                 VStack(spacing: 20) {
                     // email field
@@ -119,6 +139,13 @@ struct RegistrationView: View {
                 }
             }
         }
+    }
+}
+
+extension RegistrationView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        image = Image(uiImage: selectedImage)
     }
 }
 
