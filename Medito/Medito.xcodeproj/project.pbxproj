@@ -12,6 +12,7 @@
 		34D54BAF29AC48AF00377BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D54BAE29AC48AF00377BE9 /* Assets.xcassets */; };
 		34D54BB229AC48AF00377BE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D54BB129AC48AF00377BE9 /* Preview Assets.xcassets */; };
 		34D54BB929AC499B00377BE9 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BB829AC499B00377BE9 /* MeditationView.swift */; };
+		34D54BBB29AC4B7400377BE9 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BBA29AC4B7400377BE9 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		34D54BAE29AC48AF00377BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34D54BB129AC48AF00377BE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34D54BB829AC499B00377BE9 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
+		34D54BBA29AC4B7400377BE9 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				34D54BAE29AC48AF00377BE9 /* Assets.xcassets */,
 				34D54BB029AC48AF00377BE9 /* Preview Content */,
 				34D54BB829AC499B00377BE9 /* MeditationView.swift */,
+				34D54BBA29AC4B7400377BE9 /* PlayerView.swift */,
 			);
 			path = Medito;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				34D54BAD29AC48AD00377BE9 /* ContentView.swift in Sources */,
 				34D54BB929AC499B00377BE9 /* MeditationView.swift in Sources */,
 				34D54BAB29AC48AD00377BE9 /* MeditoApp.swift in Sources */,
+				34D54BBB29AC4B7400377BE9 /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
