@@ -9,11 +9,12 @@ import SwiftUI
 
 struct MeditationView: View {
     
+    @StateObject var meditationVM: MeditationViewModel
     @State private var showPlayer = false
     
     var body: some View {
         VStack(spacing: 0) {
-            Image("testPhoto")
+            Image(meditationVM.meditation.image)
                 .resizable()
                 .scaledToFill()
                 .frame(height: UIScreen.main.bounds.height * 2 / 3)
@@ -26,13 +27,13 @@ struct MeditationView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Music")
                         
-                        Text("0s")
+                        Text(DateComponentsFormatter.abbreviated.string(from:meditationVM.meditation.duration) ?? meditationVM.meditation.duration.formatted() + "S")
                     }
                     .font(.subheadline)
                     .textCase(.uppercase)
                     .opacity(0.7)
                     
-                    Text("1 Minute Relaxing Meditation")
+                    Text(meditationVM.meditation.title)
                         .font(.title)
                     
                     Button {
@@ -48,7 +49,7 @@ struct MeditationView: View {
                     }
 
                     
-                    Text("Clear your mind and slumber into nothingness. Allocate only a few moments for a quick breathe")
+                    Text(meditationVM.meditation.description)
                     
                     Spacer()
                 }
@@ -59,13 +60,15 @@ struct MeditationView: View {
         }
         .ignoresSafeArea()
         .fullScreenCover(isPresented: $showPlayer) {
-            PlayerView()
+            PlayerView(meditationVM: meditationVM)
         }
     }
 }
 
 struct MeditationView_Previews: PreviewProvider {
+    static let meditationVM = MeditationViewModel(meditation: Meditation.data)
     static var previews: some View {
-        MeditationView()
+         
+        MeditationView(meditationVM: meditationVM)
     }
 }

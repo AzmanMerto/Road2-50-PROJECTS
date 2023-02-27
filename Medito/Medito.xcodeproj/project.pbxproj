@@ -14,6 +14,8 @@
 		34D54BB929AC499B00377BE9 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BB829AC499B00377BE9 /* MeditationView.swift */; };
 		34D54BBB29AC4B7400377BE9 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BBA29AC4B7400377BE9 /* PlayerView.swift */; };
 		34D54BBD29AC4D6500377BE9 /* PlaybackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BBC29AC4D6500377BE9 /* PlaybackControlButton.swift */; };
+		34D54BBF29AC552E00377BE9 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BBE29AC552E00377BE9 /* MeditationViewModel.swift */; };
+		34D54BC129AC572D00377BE9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BC029AC572D00377BE9 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		34D54BB829AC499B00377BE9 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		34D54BBA29AC4B7400377BE9 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		34D54BBC29AC4D6500377BE9 /* PlaybackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButton.swift; sourceTree = "<group>"; };
+		34D54BBE29AC552E00377BE9 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
+		34D54BC029AC572D00377BE9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,9 @@
 				34D54BB029AC48AF00377BE9 /* Preview Content */,
 				34D54BB829AC499B00377BE9 /* MeditationView.swift */,
 				34D54BBA29AC4B7400377BE9 /* PlayerView.swift */,
+				34D54BBE29AC552E00377BE9 /* MeditationViewModel.swift */,
 				34D54BBC29AC4D6500377BE9 /* PlaybackControlButton.swift */,
+				34D54BC029AC572D00377BE9 /* Extensions.swift */,
 			);
 			path = Medito;
 			sourceTree = "<group>";
@@ -150,7 +156,9 @@
 				34D54BB929AC499B00377BE9 /* MeditationView.swift in Sources */,
 				34D54BBD29AC4D6500377BE9 /* PlaybackControlButton.swift in Sources */,
 				34D54BAB29AC48AD00377BE9 /* MeditoApp.swift in Sources */,
+				34D54BBF29AC552E00377BE9 /* MeditationViewModel.swift in Sources */,
 				34D54BBB29AC4B7400377BE9 /* PlayerView.swift in Sources */,
+				34D54BC129AC572D00377BE9 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
