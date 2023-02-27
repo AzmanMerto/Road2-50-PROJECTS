@@ -16,6 +16,7 @@
 		34D54BBD29AC4D6500377BE9 /* PlaybackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BBC29AC4D6500377BE9 /* PlaybackControlButton.swift */; };
 		34D54BBF29AC552E00377BE9 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BBE29AC552E00377BE9 /* MeditationViewModel.swift */; };
 		34D54BC129AC572D00377BE9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BC029AC572D00377BE9 /* Extensions.swift */; };
+		34D54BC329AC5DD500377BE9 /* AudioManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BC229AC5DD500377BE9 /* AudioManager .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		34D54BBC29AC4D6500377BE9 /* PlaybackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButton.swift; sourceTree = "<group>"; };
 		34D54BBE29AC552E00377BE9 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
 		34D54BC029AC572D00377BE9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		34D54BC229AC5DD500377BE9 /* AudioManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioManager .swift"; sourceTree = "<group>"; };
+		34D54BC629ACF9D400377BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		34D54BA929AC48AD00377BE9 /* Medito */ = {
 			isa = PBXGroup;
 			children = (
+				34D54BC629ACF9D400377BE9 /* Info.plist */,
 				34D54BAA29AC48AD00377BE9 /* MeditoApp.swift */,
 				34D54BAC29AC48AD00377BE9 /* ContentView.swift */,
 				34D54BAE29AC48AF00377BE9 /* Assets.xcassets */,
@@ -70,6 +74,7 @@
 				34D54BBE29AC552E00377BE9 /* MeditationViewModel.swift */,
 				34D54BBC29AC4D6500377BE9 /* PlaybackControlButton.swift */,
 				34D54BC029AC572D00377BE9 /* Extensions.swift */,
+				34D54BC229AC5DD500377BE9 /* AudioManager .swift */,
 			);
 			path = Medito;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				34D54BBF29AC552E00377BE9 /* MeditationViewModel.swift in Sources */,
 				34D54BBB29AC4B7400377BE9 /* PlayerView.swift in Sources */,
 				34D54BC129AC572D00377BE9 /* Extensions.swift in Sources */,
+				34D54BC329AC5DD500377BE9 /* AudioManager .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +296,7 @@
 				DEVELOPMENT_TEAM = MW2482B7WH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Medito/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,6 +326,7 @@
 				DEVELOPMENT_TEAM = MW2482B7WH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Medito/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

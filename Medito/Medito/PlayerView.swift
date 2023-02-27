@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct PlayerView: View {
+    @EnvironmentObject var audioManager: AudioManager
     var meditationVM: MeditationViewModel
+    var isPreview: Bool = false
     @State private var value : Double = 0.0
     @Environment(\.dismiss) var dismiss
+    
+    let timer = Timer
+        .publish(every: 0.5, on: .main, in: .common)
+        .autoconnect()
+    
     
     var body: some View {
         ZStack {
@@ -42,66 +49,81 @@ struct PlayerView: View {
                     }
                     Spacer()
                 }
-                
                 // MARK: Title
-                
                 Text(meditationVM.meditation.title)
                     .font(.title)
                     .foregroundColor(.white)
                 Spacer()
                 
-                VStack(spacing: 5) {
-                    Slider(value: $value, in: 0...60)
+                // MARK: Playback Timeline
+                
+                if let player = audioManager.player {
+                    VStack(spacing: 5) {
+                        Slider(value: $value, in: 0...player.duration) { editing in
+                            if !editing {
+                                player.currentTime = value
+                            }
+                        }
+                        
+                        //MARK: - Playback Time
+                        HStack{
+                            Text("0:00")
+                            
+                            Spacer()
+                            
+                            Text("1:00")
+                        }
+                        .font(.caption)
+                        .foregroundColor(.white)
+                    }
+                    .tint(.purple)
                     
-                    //MARK: - Playback Time
-                    HStack{
-                        Text("0:00")
+                    HStack {
+                        // MARK: Repeat Button
+                        PlaybackControlButton(systemName: "repeat") {
+                            
+                        }
                         
                         Spacer()
                         
-                        Text("1:00")
-                    }
-                    .font(.caption)
-                    .foregroundColor(.white)
-                }
-                .tint(.purple)
-                
-                HStack {
-                    // MARK: Repeat Button
-                    PlaybackControlButton(systemName: "repeat") {
+                        // MARK: Backward Button
+                        PlaybackControlButton(systemName: "gobackward.10") {
+                            
+                        }
                         
-                    }
-                    
-                    Spacer()
-
-                    // MARK: Backward Button
-                    PlaybackControlButton(systemName: "gobackward.10") {
+                        Spacer()
                         
-                    }
-                    
-                    Spacer()
-                    
-                    // MARK: Play/Pause Button
-                    PlaybackControlButton(systemName: "play.circle.fill",fontSize: 44) {
+                        // MARK: Play/Pause Button
+                        PlaybackControlButton(systemName: "play.circle.fill",fontSize: 44) {
+                            
+                        }
                         
-                    }
-                    
-                    Spacer()
-                    
-                    // MARK: Forward Button
-                    PlaybackControlButton(systemName: "goforward.10") {
+                        Spacer()
                         
-                    }
-                    
-                    Spacer()
-                    
-                    // MARK: Stop Button
-                    PlaybackControlButton(systemName: "stop.fill") {
+                        // MARK: Forward Button
+                        PlaybackControlButton(systemName: "goforward.10") {
+                            
+                        }
                         
+                        Spacer()
+                        
+                        // MARK: Stop Button
+                        PlaybackControlButton(systemName: "stop.fill") {
+                            
+                        }
                     }
                 }
             }
             .padding(20)
+        }
+        .onSubmit {
+//            AudioManager.shared.startPlayer(track: meditationVM.meditation.track,isPrview: isPreview)
+            audioManager.startPlayer(track: meditationVM.meditation.track,
+                                     isPrview: isPreview)
+        }
+        .onReceive(timer) { _ in
+            guard let player = audioManager.player else { return }
+            value = player.currentTime
         }
     }
 }
@@ -109,6 +131,7 @@ struct PlayerView: View {
 struct PlayerView_Previews: PreviewProvider {
     static let meditationVM = MeditationViewModel(meditation: Meditation.data)
     static var previews: some View {
-        PlayerView(meditationVM: meditationVM)
+        PlayerView(meditationVM: meditationVM,isPreview: true)
+            .environmentObject(AudioManager())
     }
 }
