@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
     var body: some View {
         TabView {
             FeedView()
@@ -35,6 +36,16 @@ struct MainTabView: View {
                 }
         }
         .tint(.black)
+    }
+    
+    var logOutButton: some View {
+        Button {
+            AuthViewModel.shared.signOut()
+        } label: {
+            Text("Logout")
+                .foregroundColor(.black)
+        }
+
     }
 }
 
