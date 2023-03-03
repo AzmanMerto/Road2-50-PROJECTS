@@ -11,6 +11,7 @@ struct LoginView: View {
     
     @State private var email = ""
     @State private var password = ""
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         ZStack {
@@ -60,7 +61,7 @@ struct LoginView: View {
                 }
                 // MARK: - LoginView sign in
                 Button {
-                    
+                    viewModel.login()
                 } label: {
                     Text("Sign In")
                         .font(.headline)

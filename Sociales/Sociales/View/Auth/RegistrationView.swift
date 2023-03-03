@@ -16,6 +16,8 @@ struct RegistrationView: View {
     @State private var selectedImage: UIImage?
     @State private var image: Image?
     @State var imagePickerPresented = false
+    @EnvironmentObject var viewModel: AuthViewModel
+
     
     @Environment(\.dismiss) var dismiss
     
@@ -106,11 +108,15 @@ struct RegistrationView: View {
                             .font(.system(.caption))
                             .foregroundColor(.white)
                     }
-                    .padding(.init(top: 10, leading: 0, bottom: 0, trailing: 40))
+                    .padding(.init(top: 10,
+                                   leading: 0,
+                                   bottom: 0,
+                                   trailing: 40))
                 }
                 // MARK: - RegistrationView sign up
                 Button {
-
+                    viewModel.regsiter(withEmail: email,
+                                       password: password)
                 } label: {
                     Text("Sign Up")
                         .font(.headline)
