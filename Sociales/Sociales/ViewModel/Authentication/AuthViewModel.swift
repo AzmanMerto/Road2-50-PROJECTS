@@ -5,8 +5,10 @@
 //  Created by NomoteteS on 4.03.2023.
 //
 
-import Foundation
-import Firebase
+import SwiftUI
+import FirebaseAuth
+import FirebaseFirestore
+
 
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
@@ -17,11 +19,24 @@ class AuthViewModel: ObservableObject {
         userSession = Auth.auth().currentUser
     }
     
-    func login() {
-        
+    func login(withEmail email: String,
+               password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print("Error\(error.localizedDescription)")
+                return
+            }
+            
+            guard let user = result?.user else { return }
+            self.userSession = user
+        }
     }
      
-    func regsiter(withEmail email: String,password: String, image: UIImage?, fullname: String, username: String) {
+    func regsiter(withEmail email: String,
+                  password: String,
+                  image: UIImage?,
+                  fullname: String,
+                  username: String) {
         
         guard let image = image else { return }
         
@@ -32,7 +47,6 @@ class AuthViewModel: ObservableObject {
                     return
                 }
                 guard let user = result?.user else { return }
-                self.userSession = user
                 
                 let data = ["email" : email,
                             "username": username,

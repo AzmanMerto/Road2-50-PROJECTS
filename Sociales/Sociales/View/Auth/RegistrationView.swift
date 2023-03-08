@@ -29,7 +29,7 @@ struct RegistrationView: View {
             .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                // MARK: RegistrationView Image Upload
+                //MARK: RegistrationView Image Upload
                 VStack {
                     if let image = image {
                         image
@@ -58,7 +58,7 @@ struct RegistrationView: View {
                     }
                 }
                 .padding()
-                //  MARK: - RegistrationView email & password fields
+                //MARK: - RegistrationView email & password fields
                 VStack(spacing: 20) {
                     // email field
                     CustomTextField(text: $email,
