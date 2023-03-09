@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340F92F829B94B7000B3127E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92F729B94B7000B3127E /* Constants.swift */; };
+		340F92FB29B9519E00B3127E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92FA29B9519E00B3127E /* User.swift */; };
+		340F92FE29B955C500B3127E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 340F92FD29B955C500B3127E /* FirebaseFirestoreSwift */; };
+		340F930029B9600400B3127E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92FF29B9600400B3127E /* SearchViewModel.swift */; };
 		3485D20C29A630A80002C2A6 /* SocialesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D20B29A630A80002C2A6 /* SocialesApp.swift */; };
 		3485D20E29A630A80002C2A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485D20D29A630A80002C2A6 /* ContentView.swift */; };
 		3485D21029A630AA0002C2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3485D20F29A630AA0002C2A6 /* Assets.xcassets */; };
@@ -45,6 +49,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		340F92F729B94B7000B3127E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		340F92FA29B9519E00B3127E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		340F92FF29B9600400B3127E /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		3485D20829A630A80002C2A6 /* Sociales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sociales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3485D20B29A630A80002C2A6 /* SocialesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialesApp.swift; sourceTree = "<group>"; };
 		3485D20D29A630A80002C2A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +92,7 @@
 				34ECC12E29A7F696006ACA3B /* Kingfisher in Frameworks */,
 				34ECC12929A7E205006ACA3B /* FirebaseMessaging in Frameworks */,
 				34ECC12729A7E205006ACA3B /* FirebaseFunctions in Frameworks */,
+				340F92FE29B955C500B3127E /* FirebaseFirestoreSwift in Frameworks */,
 				34ECC12329A7E205006ACA3B /* FirebaseAuth in Frameworks */,
 				34ECC12B29A7E205006ACA3B /* FirebaseStorage in Frameworks */,
 				34ECC12529A7E205006ACA3B /* FirebaseFirestore in Frameworks */,
@@ -94,11 +102,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340F92F929B9519500B3127E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				340F92FA29B9519E00B3127E /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		340F92FC29B955C400B3127E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3485D1FF29A630A80002C2A6 = {
 			isa = PBXGroup;
 			children = (
 				3485D20A29A630A80002C2A6 /* Sociales */,
 				3485D20929A630A80002C2A6 /* Products */,
+				340F92FC29B955C400B3127E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				3485D20B29A630A80002C2A6 /* SocialesApp.swift */,
-				34AACD9F29B2A88B006E29FE /* Model */,
+				340F92F929B9519500B3127E /* Model */,
 				3485D21C29A639DC0002C2A6 /* View */,
 				34AACDA029B2A894006E29FE /* ViewModel */,
 				34AACDA129B2A8A0006E29FE /* Api */,
@@ -141,6 +165,7 @@
 				34B9C46929A6F43A001F3696 /* ImagePicker.swift */,
 				34B9C47129A70886001F3696 /* CustomTextField.swift */,
 				34B9C47329A70893001F3696 /* CustomSecureField.swift */,
+				340F92F729B94B7000B3127E /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -243,13 +268,6 @@
 			path = Items;
 			sourceTree = "<group>";
 		};
-		34AACD9F29B2A88B006E29FE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		34AACDA029B2A894006E29FE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +290,7 @@
 		34AACDA229B2A8AC006E29FE /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				340F92FF29B9600400B3127E /* SearchViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -321,6 +340,7 @@
 				34ECC12829A7E205006ACA3B /* FirebaseMessaging */,
 				34ECC12A29A7E205006ACA3B /* FirebaseStorage */,
 				34ECC12D29A7F696006ACA3B /* Kingfisher */,
+				340F92FD29B955C500B3127E /* FirebaseFirestoreSwift */,
 			);
 			productName = Sociales;
 			productReference = 3485D20829A630A80002C2A6 /* Sociales.app */;
@@ -399,14 +419,17 @@
 				3485D23E29A670B60002C2A6 /* UserCell.swift in Sources */,
 				3485D23A29A65F280002C2A6 /* SearchBar.swift in Sources */,
 				34B9C47429A70893001F3696 /* CustomSecureField.swift in Sources */,
+				340F930029B9600400B3127E /* SearchViewModel.swift in Sources */,
 				3485D23229A63D0C0002C2A6 /* NotificationView.swift in Sources */,
 				3485D23829A642250002C2A6 /* FeedCell.swift in Sources */,
+				340F92FB29B9519E00B3127E /* User.swift in Sources */,
 				3485D24A29A687C90002C2A6 /* ProfileActionButtonView.swift in Sources */,
 				34AACDA729B2A961006E29FE /* AuthViewModel.swift in Sources */,
 				3485D24029A670BF0002C2A6 /* UserListView.swift in Sources */,
 				3485D24429A678700002C2A6 /* NotificationCell.swift in Sources */,
 				34B9C46C29A70051001F3696 /* LoginView.swift in Sources */,
 				3485D24229A675D20002C2A6 /* Extensions.swift in Sources */,
+				340F92F829B94B7000B3127E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +665,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		340F92FD29B955C500B3127E /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34ECC12129A7E205006ACA3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
 		34ECC12229A7E205006ACA3B /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 34ECC12129A7E205006ACA3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
