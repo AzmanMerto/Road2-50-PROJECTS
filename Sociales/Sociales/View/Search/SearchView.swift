@@ -15,17 +15,17 @@ struct SearchView: View {
     
     var body: some View {
         ScrollView {
-            // MARK: - SearchView searchBar
+            // MARK: SearchView - searchBar
             SearchBar(text: $searchText,
                       isEditing: $inSearchMode)
                 .padding()
             ZStack {
                 if inSearchMode {
-            // MARK: - SearchView Gridview
+            // MARK: SearchView - Gridview
                     PostGridView()
                 } else {
-            // MARK: - SearchView User list view
-                    UserListView(viewModel: viewModel)
+            // MARK: SearchView - User list view
+                    UserListView(viewModel: viewModel,searchText: $searchText)
                 }
             }
         }
